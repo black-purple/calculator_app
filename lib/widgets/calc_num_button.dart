@@ -13,7 +13,13 @@ class CalcNumButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       child: TextButton(
-        child: Text(text),
+        child: Text(
+          text,
+          style: TextStyle(
+            color: color,
+            fontSize: 30,
+          ),
+        ),
         onPressed: onTap,
       ),
     );
