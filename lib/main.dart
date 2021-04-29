@@ -42,11 +42,11 @@ class _CalculatorHomeState extends State<CalculatorHome> {
               icon: iconToggle
                   ? Icon(
                       Icons.dark_mode,
-                      color: Color(0xFF23262F),
+                      color: Theme.of(context).primaryColorDark,
                     )
                   : Icon(
                       Icons.light_mode,
-                      color: Colors.white,
+                      color: Theme.of(context).primaryColorLight,
                     ),
               onPressed: () {
                 setState(() {
@@ -92,12 +92,15 @@ class _CalculatorHomeState extends State<CalculatorHome> {
                           ),
                         ),
                       ),
-                      Text(
-                        'test',
-                        style: TextStyle(
-                          color: isDarkToggle
-                              ? Theme.of(context).primaryColorDark
-                              : Theme.of(context).primaryColorLight,
+                      Align(
+                        alignment: Alignment.centerLeft,
+                        child: Text(
+                          'test',
+                          style: TextStyle(
+                            color: isDarkToggle
+                                ? Theme.of(context).primaryColorDark
+                                : Theme.of(context).primaryColorLight,
+                          ),
                         ),
                       ),
                     ],
