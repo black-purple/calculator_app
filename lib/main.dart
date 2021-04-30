@@ -50,11 +50,11 @@ class _CalculatorHomeState extends State<CalculatorHome> {
               icon: iconToggle
                   ? Icon(
                       Icons.light_mode,
-                      color: Theme.of(context).primaryColorLight,
+                      color: Colors.amber,
                     )
                   : Icon(
                       Icons.dark_mode,
-                      color: Theme.of(context).primaryColorDark,
+                      color: Color(0xFF8c7ae6),
                     ),
               onPressed: () {
                 setState(() {
@@ -117,8 +117,8 @@ class _CalculatorHomeState extends State<CalculatorHome> {
                                 style: TextStyle(
                                   fontSize: 50,
                                   color: isDarkToggle
-                                      ? Theme.of(context).primaryColorDark
-                                      : Theme.of(context).primaryColorLight,
+                                      ? Color(0xFF8c7ae6)
+                                      : Color(0xBB8c7ae6),
                                 ),
                               ),
                             ),
