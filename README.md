@@ -3,7 +3,7 @@
 An android app made using dart lang and it's framework Flutter.
 
 ## App Preview
-The app iw available in both light mode and dark mode
+The app is available in both light mode and dark mode
 <br>
 <span>
 <img src="./README Images/calculator_preview.jpg" height="500">
